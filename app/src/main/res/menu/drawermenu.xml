@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Varieties">
+        <menu>
+            <item
+                    android:title="Type 1"
+                    android:id="@+id/Type1"
+                   />
+            <item
+                    android:title="Type 2"
+                    android:id="@+id/Type2"
+                    />
+        </menu>
+    </item>
+
+</menu>
