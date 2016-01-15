@@ -4,13 +4,29 @@
     <item android:title="Varieties">
         <menu>
             <item
-                    android:title="Type 1"
-                    android:id="@+id/Type1"
+                    android:title="Grand Naine"
+                    android:id="@+id/grand_n"
                    />
             <item
-                    android:title="Type 2"
-                    android:id="@+id/Type2"
+                    android:title="Nendran"
+                    android:id="@+id/nendran"
                     />
+            <item
+                    android:title="Poovan"
+                    android:id="@+id/poovan"
+            />
+            <item
+                    android:title="Ney Poovan"
+                    android:id="@+id/ney_poovan"
+            />
+            <item
+                    android:title="Rasthali"
+                    android:id="@+id/rasthali"
+            />
+            <item
+                    android:title="Karpuravalli"
+                    android:id="@+id/karp"
+            />
         </menu>
     </item>
 

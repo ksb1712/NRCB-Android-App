@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
@@ -21,10 +23,9 @@ public class Information_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
-
-
-
         setContentView(R.layout.activity_information_page);
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         /**
          *Setup the DrawerLayout and NavigationView
@@ -52,15 +53,38 @@ public class Information_page extends AppCompatActivity {
 
 
 
-                if (menuItem.getItemId() == R.id.Type1) {
+                if ((menuItem.getItemId() == R.id.grand_n)&&(getSupportActionBar()!=null)) {
+
+                    getSupportActionBar().setTitle("Grand Naine");
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
 
                 }
 
-                if (menuItem.getItemId() == R.id.Type2) {
-                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
-                    xfragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+                if (menuItem.getItemId() == R.id.nendran) {
+                    getSupportActionBar().setTitle("Nendran");
+                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+                }
+                if (menuItem.getItemId() == R.id.poovan) {
+                    getSupportActionBar().setTitle("Poovan");
+                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+                }
+                if (menuItem.getItemId() == R.id.ney_poovan) {
+                    getSupportActionBar().setTitle("Ney Poovan");
+                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+                }
+                if (menuItem.getItemId() == R.id.rasthali) {
+                    getSupportActionBar().setTitle("Rasthali");
+                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
+                }
+                if (menuItem.getItemId() == R.id.karp) {
+                    getSupportActionBar().setTitle("Karpuravalli");
+                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.containerView,new TabFragment()).commit();
                 }
 
                 return false;
@@ -72,7 +96,7 @@ public class Information_page extends AppCompatActivity {
          * Setup Drawer Toggle of the Toolbar
          */
 
-        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this,mDrawerLayout, toolbar,R.string.app_name,
                 R.string.app_name);
 
