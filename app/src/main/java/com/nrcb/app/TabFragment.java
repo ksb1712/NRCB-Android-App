@@ -19,7 +19,7 @@ public class TabFragment extends Fragment {
 
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
-    public static int int_items = 2 ;
+
 
     @Nullable
     @Override
@@ -69,6 +69,7 @@ public class TabFragment extends Fragment {
             switch (position){
                 case 0 : return new Fragment1();
                 case 1 : return new Fragment2();
+                case 2 : return new Fragment3();
 
             }
             return null;
@@ -77,7 +78,7 @@ public class TabFragment extends Fragment {
         @Override
         public int getCount() {
 
-            return int_items;
+            return Utilities.get_items;
 
         }
 
@@ -90,9 +91,11 @@ public class TabFragment extends Fragment {
 
             switch (position){
                 case 0 :
-                    return "Query 1";
+                    return "Soil Details";
                 case 1 :
-                    return "Query 2";
+                    return "Cost Details";
+                case 2:
+                    return "Net Result";
 
             }
             return null;

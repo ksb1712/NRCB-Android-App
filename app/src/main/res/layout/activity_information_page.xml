@@ -13,7 +13,7 @@
             android:background="@color/orange"
             android:id="@+id/toolbar"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title="Information" />
+            app:title="Grand Naine" />
 
     <android.support.v4.widget.DrawerLayout
             xmlns:android="http://schemas.android.com/apk/res/android"

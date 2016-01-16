@@ -1,7 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
 
-</LinearLayout>
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20sp">
+        <EditText
+                android:id="@+id/soil_N"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="    Enter Soil N"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:inputType="numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fNameLayout" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginTop="30sp">
+        <EditText
+                android:id="@+id/soil_P"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="    Enter Soil P2O5"
+                android:inputType="numberDecimal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp" android:layout_below="@+id/fNameLayout2"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <EditText
+                android:id="@+id/soil_K"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="    Enter Soil K2O"
+                android:inputType="numberDecimal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_below="@+id/fNameLayout3"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <EditText
+                android:id="@+id/soil_T"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="    Enter target(t/ha)"
+                android:inputType="numberDecimal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;-- Swipe to left for price details "
+            android:id="@+id/swipe" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_margin="20sp" android:textSize="22sp"
+            android:textStyle="bold" android:visibility="visible"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swipe to right for varieties --> "
+            android:id="@+id/swipe2" android:layout_above="@+id/swipe" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:textSize="22sp" android:textStyle="bold"
+            android:layout_marginLeft="10sp" android:visibility="visible"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@drawable/roundbutton"
+            android:id="@+id/button_next" android:layout_alignBottom="@+id/swipe" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:visibility="invisible" android:layout_marginRight="20sp"/>
+
+
+</RelativeLayout>

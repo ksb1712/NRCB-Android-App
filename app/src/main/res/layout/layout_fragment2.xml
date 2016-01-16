@@ -1,7 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
 
-</LinearLayout>
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20sp">
+        <EditText
+                android:id="@+id/cost_U"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="    Cost of 50kg Urea"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:inputType="numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fNameLayout" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20sp">
+        <EditText
+                android:id="@+id/cost_S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="    Cost of 50kg Super"
+                android:inputType="numberDecimal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp" android:layout_below="@+id/fNameLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        <EditText
+                android:id="@+id/cost_M"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="    Cost of 50kg MOP"
+                android:inputType="numberDecimal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/fNameLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        <EditText
+                android:id="@+id/cost_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Cost of cultn. Per Plant (excl. fert)"
+                android:inputType="numberDecimal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/fNameLayout4"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <EditText
+                android:id="@+id/cost_P"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="    Expected price of banana (per kg)"
+                android:inputType="numberDecimal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:id="@+id/calc_button" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_marginRight="10sp" android:layout_marginBottom="5sp"
+            android:background="@drawable/roundbutton"/>
+
+</RelativeLayout>
