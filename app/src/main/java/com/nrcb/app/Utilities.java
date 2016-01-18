@@ -1,6 +1,7 @@
 package com.nrcb.app;
 
 import android.content.Context;
+import android.support.v7.app.ActionBar;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -28,11 +29,12 @@ public class Utilities {
     public static float super_P; //Super(kg/ha)
     public static float mop_K; //MOP(kg/ha)
     public static Context context;
-    public static int get_items = 3;
+    public static int get_items = 2;
     public static TextView swipe1;
     public static TextView swipe2;
     public static Button next;
     public static char name;
     public static float multiply;
+    public static android.app.ActionBar actionBar;
 
 }

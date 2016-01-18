@@ -69,7 +69,7 @@ public class TabFragment extends Fragment {
             switch (position){
                 case 0 : return new Fragment1();
                 case 1 : return new Fragment2();
-                case 2 : return new Fragment3();
+
 
             }
             return null;
@@ -94,8 +94,7 @@ public class TabFragment extends Fragment {
                     return "Soil Details";
                 case 1 :
                     return "Cost Details";
-                case 2:
-                    return "Net Result";
+
 
             }
             return null;

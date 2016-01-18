@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.nrcb.app.Result">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exp. due to fertilizer"
+            android:id="@+id/fert_cost" android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30sp" android:textSize="25sp"
+            android:textStyle="bold"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gross profit(Rs/ha)"
+            android:id="@+id/gross" android:layout_centerVertical="true"
+            android:layout_marginLeft="30sp" android:textStyle="bold" android:textSize="25sp"
+            android:textIsSelectable="false"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net profit(Rs/ha)"
+            android:id="@+id/net" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="91dp" android:layout_marginLeft="30sp" android:textSize="25sp"
+            android:textStyle="bold"/>
+
+</RelativeLayout>
